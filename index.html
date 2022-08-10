@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" >
+    <title> Jogo da forca ONE + Alura</title>
+
+    <!--Título-->
+    <link rel="stylesheet" href="src/style.css">
+    <!--   <link rel="stylesheet" href="CSS/comecar_jogar.css"> -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </head>
+
+<!--Logo da Alura-->
+  <header>
+    <a target="_blank"  href="https://www.alura.com.br/">
+    <img src="../img/vector.png" alt="Logo Alura">
+    </a>
+  </header>
+  <body>
+    <main>
+
+<!--inicio -->
+  <div id="inicio" class="tela">
+
+      <div>
+        <button class="btn btn1" id="btn-iniciar">Começar a jogar</button>
+      </div>
+      <div>
+        <button class="btn btn2" id="inserir-palavra">
+          Adicionar nova palavra
+        </button>
+        </div>
+        </div>
+    <h3>Challenge Oracle + Alura</h3>
+
+<!-- inserindo  uma nova palavra -->
+    <div id="in-palavra" class="tela2 oculta">
+      <div>
+        <textarea
+        type="text"
+          name="palavra"
+          id="palavra"
+          cols="40"
+          rows="9"
+          placeholder="Digite uma palavra ou frase"
+        ></textarea>
+      </div>
+      <div id="insert">
+        <div id="info">
+          <img src="img/info.svg"  class="info"   alt="simbolo de exclamação!">
+          <label for="info"> Maximo de 8 Letras</label>
+        </div>
+
+        <button class="btn btn3" id="gravar" >Salvar e começar</button>
+        <button class="btn btn4" id="cancelar"  >Cancelar</button>
+      </div>
+    </div>
+
+    <div id="jogo" class="tela3 oculta">
+
+      <div>
+          <canvas id="forca" height="400px" width="980px"></canvas>
+      </div>
+
+      <h3 id="word">Palavras digitadas</h3>
+      <div class="New-Over">
+        <button class="btn btn5" id="novo-jogo">Novo Jogo</button>
+        <button class="btn btn6" id="desistir">Desistir</button>
+      </div>
+    </div>
+  </main>
+<!-- Rodape / Referencias -->
+    <div class="ref">
+      <footer>
+       <strong>Desenvolvido por:</strong> Bruno Petri
+          <br/>
+          <ul>
+            <a href="https://www.linkedin.com/in/brunoopetri" target="_blanck">
+              <img class="image-footer" src="img/linkedIn.png" alt="Ícone do LinkedIn"></a>
+
+            <a href="https://github.com/brunoopetri" target="_blanck">
+                      <img class="image-footer" src="img/github.png" alt="Ícone do GitHub"></a>
+          </ul>
+       </footer>
+    </div>
+    <!-- Fim do rodape / Referencias -->
+
+  <script src="src/script.js"></script>
+  <script src="src/canvas.js"></script>
+  <script src="src/startGame.js"></script>
+  <script src="src/revelLetter.js"></script>
+  <script src="src/validation.js"></script>
+  <script src="src/victoryLoss.js"></script>
+</body>
+</html>
