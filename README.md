@@ -1,4 +1,5 @@
 📜Descrição:
+
 Esse projeto é resultado do segundo desafio da trilha Iniciante em Programação do programa Oracle Next Education.
 
 ## Jogo da Forca
